@@ -5,17 +5,7 @@
 :root {
 }
 @import "bootstrap/scss/bootstrap-grid";
-.row + .row {
-  margin-top: 16px;
-}
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
 /* ====================================
 // reset rules
 // ==================================== */
@@ -45,7 +35,6 @@ a {
 
 img,
 video {
-  max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
 }
@@ -57,4 +46,227 @@ h1 {
   font-family: brother-1816, sans-serif;
   font-weight: 700;
   font-style: italic;
+}
+/* brother-1816, sans-serif */
+/* 'Montserrat', sans-serif */
+
+.intro-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.intro-nav a {
+  font-size: 25px;
+  font-family: brother-1816, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header {
+  height: 500px;
+  background-image: url(../img/Rectangle.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  padding-top: 49px;
+}
+
+.pale-green-title {
+  font-size: 20px;
+  font-family: brother-1816, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #748272;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.grey-title-intro {
+  font-size: 30px;
+  font-family: brother-1816, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #565656;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.grey-title {
+  font-size: 30px;
+  font-family: brother-1816, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #565656;
+  text-align: left;
+  margin-bottom: 15px;
+  padding-top: 30px;
+  margin-left: 60px;
+}
+
+.grey-text-intro {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #565656;
+  text-align: center;
+  margin-bottom: 125px;
+}
+
+.grey-text {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #565656;
+  text-align: left;
+  margin-left: 60px;
+  padding-bottom: 40px;
+  margin-right: 40px;
+}
+
+.beige {
+  background-color: #eddac6;
+  width: 100%;
+  padding-top: 135px;
+}
+
+.image {
+  @media (max-width: 576px) {
+    width: 100vw;
+  }
+  @media (min-width: 576px) {
+    width: 100%;
+  }
+  @media (min-width: 992px) {
+    width: 200%;
+  }
+}
+
+.image-left {
+  @media (min-width: 992px) {
+    margin-left: -100%;
+  }
+}
+
+.section {
+  margin-bottom: 150px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-padding-text {
+  @media (max-width: 992px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.main-banner {
+  width: 100vw;
+  background-image: url(../img/bar.webp);
+  height: 300px;
+  background-position: center;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.color {
+  background-color: rgba($color: #fff9f3, $alpha: 0.8);
+  z-index: 1;
+}
+
+.green-bottom {
+  background-color: #748272;
+  height: 100%;
+}
+
+.white {
+  @media (min-width: 992px) {
+    background-color: rgba($color: #f8fff9, $alpha: 0.8);
+    z-index: 1;
+  }
+}
+
+.white-title {
+  font-size: 30px;
+  font-family: brother-1816, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-align: left;
+  margin-bottom: 15px;
+  padding-top: 30px;
+  margin-left: 60px;
+}
+
+.white-title-shop {
+  font-size: 30px;
+  font-family: brother-1816, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-align: left;
+  margin-bottom: 15px;
+  padding-top: 30px;
+  margin-left: 60px;
+  @media (min-width: 992px) {
+    color: #565656;
+  }
+}
+
+.white-text {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  margin-left: 60px;
+  padding-bottom: 40px;
+  margin-right: 40px;
+}
+
+.white-text-shop {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  margin-left: 60px;
+  padding-bottom: 40px;
+  margin-right: 40px;
+  @media (min-width: 992px) {
+    color: #565656;
+  }
+}
+
+.green {
+  background-color: #748272;
+  margin-top: 150px;
+  margin-bottom: 140px;
+}
+
+footer {
+  background-color: #748272;
+  margin-top: 100px;
 }
