@@ -18,6 +18,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,6 +54,7 @@ h1 {
 .intro-nav {
   display: flex;
   justify-content: flex-end;
+  gap: 30px;
 }
 
 .intro-nav a {
@@ -60,8 +62,10 @@ h1 {
   font-family: brother-1816, sans-serif;
   font-weight: 800;
   font-style: italic;
-  color: white;
+  color: #9bac99;
   text-align: right;
+  margin-top: 35px;
+  margin-right: 40px;
 }
 
 a {
@@ -74,11 +78,22 @@ a {
   width: 100%;
 }
 
+.logo {
+  margin-top: 25px;
+}
+
 header {
   height: 500px;
   background-image: url(../img/Rectangle.webp);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  header {
+    background-image: url(../img/Rectangle2.webp);
+  }
 }
 
 main {
@@ -260,6 +275,25 @@ main {
   }
 }
 
+.white-title-footer {
+  font-family: brother-1816, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+  margin-top: 46px;
+}
+
+.white-text-footer {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  margin-top: 25px;
+  line-height: 2;
+}
+
 .green {
   background-color: #748272;
   margin-top: 150px;
@@ -269,4 +303,13 @@ main {
 footer {
   background-color: #748272;
   margin-top: 100px;
+}
+
+.icons {
+  font-family: FontAwesome6Brands-Regular;
+  font-size: 30px;
+  color: #f2ede5;
+  letter-spacing: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
