@@ -68,7 +68,7 @@ h1 {
   font-style: italic;
   color: #9bac99;
   text-align: right;
-  margin-top: 35px;
+  margin-top: 10px;
   margin-right: 40px;
 }
 
@@ -80,10 +80,15 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .logo {
   margin-top: 25px;
+}
+
+.img-logo {
+  width: 170px;
 }
 
 .row-logo {
@@ -126,16 +131,22 @@ header {
   position: fixed;
   color: #9bac99;
   background-color: rgba($color: #565656, $alpha: 0.8);
-  height: 600px;
-  z-index: 999;
+  height: 100%;
+  z-index: 10;
   top: 0;
   right: 0;
+  transform: translateX(100%);
+  transition-duration: 0.5s;
   @media (min-width: 992px) {
     display: none;
+  }
+  &.is-open {
+    transform: translateX(0);
   }
 }
 
 .burger {
+  z-index: 999;
   @media (min-width: 992px) {
     display: none;
   }
@@ -143,7 +154,7 @@ header {
 
 .burger div {
   width: 40px;
-  border: 2px solid white;
+  border: 2px solid #9bac99;
   border-radius: 5px;
   margin-bottom: 10px;
 }
